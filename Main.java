@@ -4,13 +4,13 @@ public class Main{
         Scanner sc=new Scanner(System.in);
 
         //input building type
-        String type=sc.nextLine();
+        String type=sc.nextLine().to lowercase().replaceall("\\s+","");
         //input amount insured
       float amt=sc.nextFloat();
       //input previous claims
       int cl=sc.nextInt();
 
-      if(type.equalsIgnoreCase("Domestic") || type.equalsIgnoreCase("Private House")){
+      if(type.equals("domestic") || type.equals("privatehouse")){
           int pr=50;
           if(amt<100000){
               amt= (float)((0.3*amt)/100);
@@ -27,7 +27,7 @@ public class Main{
 
           }
 
-      }if(type.equalsIgnoresCase("Commercial Premise")){
+      }if(type.equalsIgnoresCase("commercialpremise")){
           int pr=80;
           if(amt<250000){
               amt=(float)((0.5*amt)/100);
