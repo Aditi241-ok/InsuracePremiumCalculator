@@ -17,13 +17,13 @@ public class Main{
               amt+=pr;
               if(cl==0){
                   amt=amt-(amt*10/100);
-              }System.out.println(amt);
+              }System.out.printf("%.2f",amt);
           }else{
               amt=(float)((0.25*amt)/100);
               amt+=pr;
               if(cl==0){
                   amt=amt-(amt*10/100);
-              }System.out.println(amt);
+              }System.out.print("%.2f",amt);
 
           }
 
@@ -35,7 +35,7 @@ public class Main{
               if(cl==0){
                 amt=amt-(amt*15/100);
               }
-              System.out.println(amt);
+              System.out.printf("%.2f",amt);
           }else{
               amt=(float)((0.75*amt)/100);
               amt+=pr;
