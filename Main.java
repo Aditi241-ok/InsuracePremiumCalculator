@@ -4,7 +4,7 @@ public class Main{
         Scanner sc=new Scanner(System.in);
 
         //input building type
-        String type=sc.nextLine().to lowercase().replaceall("\\s+","");
+        String type=sc.nextLine().to LowerCase().replaceAll("\\s+","");
         //input amount insured
       float amt=sc.nextFloat();
       //input previous claims
